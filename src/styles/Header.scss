@@ -1,0 +1,47 @@
+@import 'colors';
+
+
+nav{
+    width: 100vw;
+    padding: 0.6rem;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: $first;
+    top: 0;
+    opacity: 0.9;
+    z-index: 10;
+    // border-bottom: 1px solid $first;
+    border-radius: 5px;
+    background-color: $second;
+
+
+>h1{
+    text-transform: uppercase;
+    color: $first;
+    cursor: pointer;
+}
+
+>main{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+
+    >a{
+        color: $first;
+        margin: 1rem;
+        font-size: 1rem;
+        transition: all 0.6s;
+
+        &:hover{
+            color: $second;
+            font-weight: 700;
+            background-color: $first;
+            padding: 0.1rem 0.2rem;
+            border-radius: 5px;
+        }
+    }
+}
+}
+
